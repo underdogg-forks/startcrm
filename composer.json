@@ -4,6 +4,11 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"type": "project",
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
 	"require": {
 		"laravel/framework": "5.0.*"
 	},
@@ -37,8 +42,5 @@
 			"php -r \"copy('.env.example', '.env');\"",
 			"php artisan key:generate"
 		]
-	},
-	"config": {
-		"preferred-install": "dist"
 	}
 }

@@ -1,7 +1,8 @@
 <?php
 
-return [
+error_reporting(E_ALL ^ E_DEPRECATED);
 
+return [
 	/*
 	|--------------------------------------------------------------------------
 	| Application Debug Mode
@@ -80,7 +81,7 @@ return [
 
 	'key' => env('APP_KEY', 'SomeRandomString'),
 
-	'cipher' => MCRYPT_RIJNDAEL_128,
+	'cipher' => 'AES-256-CBC',
 
 	/*
 	|--------------------------------------------------------------------------
